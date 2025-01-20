@@ -96,7 +96,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ## Demo
 <video controls src="2025-01-20 15-01-35.mp4" title="Title"></video>
 
-[text](<2025-01-20 15-01-35.mp4>)
+[Video Demo](<2025-01-20 15-01-35.mp4>)
 
 
 
