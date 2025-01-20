@@ -12,7 +12,7 @@ Two AWS Lambda functions built for simple and practical tasks:
 - **Addition Function**: Adds two numbers provided in the payload and returns their sum.
 - **S3 Document Upload Function**: Uploads base64-encoded documents to an S3 bucket with proper IAM permissions.
 
-# Demo
+### Demo
 - **Addition Function Input**:  
   ```json
   {
@@ -48,7 +48,7 @@ A real-time chat application using Django with WebSocket support. Key features i
 - Message history saved in the database.
 - Multiple chat rooms and secure user authentication.
 
-### Demo
+# Demo
 <video controls src="2025-01-20 15-01-35.mp4" title="Title"></video>
 [video link](<https://drive.google.com/file/d/1F2899jDNi6wGD_mFfC-xnNYK3qqguitN/view?usp=sharing>)
 
