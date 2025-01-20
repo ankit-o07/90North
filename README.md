@@ -50,7 +50,8 @@ A real-time chat application using Django with WebSocket support. Key features i
 
 ### Demo
 <video controls src="2025-01-20 15-01-35.mp4" title="Title"></video>
-[text](<../../../SR/2025-01-20 15-01-35.mkv>)
+[text](<django\2025-01-20 15-01-35.mp4>)
+
 
 ### Screenshots
 ![alt text](<Screenshot 2025-01-20 151420.png>) 
