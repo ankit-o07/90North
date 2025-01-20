@@ -12,7 +12,7 @@ Two AWS Lambda functions built for simple and practical tasks:
 - **Addition Function**: Adds two numbers provided in the payload and returns their sum.
 - **S3 Document Upload Function**: Uploads base64-encoded documents to an S3 bucket with proper IAM permissions.
 
-### Demo
+# Demo
 - **Addition Function Input**:  
   ```json
   {
