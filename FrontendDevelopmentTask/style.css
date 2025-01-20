@@ -1,0 +1,329 @@
+/* #4635B1 */
+/* #B771E5 */
+/* #AEEA94 */
+/* #FFFBCA */
+
+/* Color Palette */
+:root {
+    --primary-purple: #4635B1;
+    --secondary-purple: #B771E5;
+    --soft-yellow: #FFFBCA;
+    --mint-green: #AEEA94;
+    --dark-purple: #30127C;
+    --text-color: #4635B1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--secondary-purple);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.nav-logo a {
+    font-family: "Great Vibes", serif;
+    font-size: 2.5rem;
+    color: white;
+}
+.nav-links ul,
+.nav-setting ul {
+    display: flex;
+    gap: 1rem;
+}
+.nav-links ul li,
+.nav-setting ul li {
+    padding: 0.3rem 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+    transition: color 0.3s ease;
+}
+.nav-links ul li:hover,
+.nav-setting ul li:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 720px) {
+    .nav-links,
+    .nav-setting {
+        display: none; /* Hide navigation links and settings */
+    }
+
+    .menu {
+        display: block; /* Optionally display a menu button */
+    }
+
+    .menu-toggle {
+        font-size: 1.5rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+/* ----------------------------Main-------------- */
+
+main{
+    display: flex;
+    position: relative;
+    background: #FFFBCA;
+    
+}
+
+.left{
+    position: absolute;
+    border-right: 1px solid gray;
+    /* height: 100%; */
+    width: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 0 10px 10px 0; /* Rounded edges */
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #AEEA94; /* Match right-bar background */
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+
+.left ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Space between list items */
+}
+
+.left ul li {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #FFFBCA; /* Soft yellow for contrast */
+    color: #4635B1;
+    font-size: 1.2rem;
+    transition: all 0.3s ease; /* Smooth hover effect */
+    cursor: pointer;
+}
+
+.left ul li:hover {
+    background-color: #B771E5; /* Purple background on hover */
+    color: #FFF; /* White text on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.closebtn {
+    font-size: 2rem;
+    color: #B771E5; /* Purple color for the cross */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.closebtn:hover {
+    color: #4635B1; /* Darker purple on hover */
+    transform: scale(1.2); /* Slight enlargement effect */
+}
+
+.closebtn:active {
+    color: #30127C; /* Darkest shade on click */
+    transform: scale(0.9); /* Slight shrink effect */
+}
+.closebtn{
+    
+    position: sticky;
+    top: 0;
+    
+}
+
+.left ul {
+    padding: 1rem; /* Add some padding inside the sidebar */
+    font-size: 1.2rem; /* Increase font size for better readability */
+    line-height: 2rem; /* Space out the list items */
+}
+
+.left ul li {
+    padding: 0.5rem 1rem; /* Add padding inside each list item */
+    border-bottom: 1px solid #ddd; /* Add a separator between items */
+    cursor: pointer; /* Make the list items look clickable */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effects */
+}
+
+.left ul li:hover {
+    background-color: #B771E5; /* Change background on hover */
+    color: white; /* Change text color on hover */
+    border-radius: 5px; /* Add slight rounding to the edges */
+}
+
+.left ul li:last-child {
+    border-bottom: none; /* Remove the border for the last item */
+}
+
+.closebtn {
+    font-size: 2rem;
+    color: #B771E5; /* Purple color for the cross */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 1rem;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.closebtn:hover {
+    color: #4635B1; /* Darker purple on hover */
+    transform: scale(1.2); /* Slight enlargement effect */
+}
+
+.closebtn:active {
+    color: #30127C; /* Darkest shade on click */
+    transform: scale(0.9); /* Slight shrink effect */
+}
+
+/* Style for the menu button */
+.menu-toggle {
+    font-size: 2rem;
+    background-color: #B771E5; /* Purple color for the button */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.menu-toggle:hover {
+    background-color: #4635B1; /* Darker purple on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.menu-toggle:active {
+    background-color: #30127C; /* Even darker shade on click */
+    transform: scale(0.95); /* Slight shrink effect */
+}
+
+
+
+
+.right{
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+    /* height: 100vh;  */
+    /* gap: 1rem;  */
+    /* background-color: #AEEA94;  */
+    
+}
+.Main{
+    width: 80%;
+    padding: 2rem;
+}
+
+.Main-div{
+    color: #4635B1;
+    /* height: 100vh; */
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.Main-div div{
+    place-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Main-div div h1 {
+    font-size: 3rem;
+}
+.Main-div div span{
+    font-size: 1.5rem;
+}
+.Main-div div p{
+    font-size: 2rem;
+}
+
+.right-bar {
+    width: 20%; /* Adjusted to fit layout */
+    background-color: #AEEA94;
+    padding: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+    border-radius: 10px 0 0 10px; /* Rounded corners for a modern look */
+    
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Spacing between sections */
+}
+
+.right-bar h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #4635B1; /* Stylish purple color for headings */
+    border-bottom: 2px solid #B771E5; /* Add a bottom border for separation */
+    padding-bottom: 0.5rem;
+}
+
+.right-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Space between list items */
+}
+
+.right-bar ul li {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #FFFBCA; /* Soft yellow for contrast */
+    color: #4635B1;
+    font-size: 1.2rem;
+    transition: all 0.3s ease; /* Smooth hover effect */
+    cursor: pointer;
+}
+
+.right-bar ul li:hover {
+    background-color: #B771E5; /* Purple background on hover */
+    color: #FFF; /* White text on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.right-bar ul li a {
+    text-decoration: none;
+    color: inherit; /* Inherits the color of the parent element */
+    display: block;
+}
+
+.right-bar ul li a:hover {
+    text-decoration: underline; /* Add underline effect on hover */
+}
+
