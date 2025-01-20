@@ -36,7 +36,7 @@ Two AWS Lambda functions built for simple and practical tasks:
 
 ![Addition Lambda Function](AddTwoNumberss.png) 
 ![S3 Document Upload Function](StoreADocSS.png)
-![S3 Document Upload Function](StoreADocSS.png)
+
 
 ---
 
@@ -50,7 +50,7 @@ A real-time chat application using Django with WebSocket support. Key features i
 
 ### Demo
 <video controls src="2025-01-20 15-01-35.mp4" title="Title"></video>
-[video link](<2025-01-20 15-01-35.mp4>)
+[video link](<https://drive.google.com/file/d/1F2899jDNi6wGD_mFfC-xnNYK3qqguitN/view?usp=sharing>)
 
 
 ### Screenshots
